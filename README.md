@@ -12,16 +12,16 @@ F Project vous permet de :
 
 ### Pourquoi F Project ?
 
-| | |
-|---|---|
-| **80% Block 0** | La majorité de nos transactions land au premier block |
-| **Réglages par Rugger** | Chaque adresse monitorée a ses propres paramètres |
-| **Multi TP/SL** | Vendez par paliers avec jusqu'à 5 niveaux |
-| **Rugger Protection** | Suivez automatiquement les changements de wallets |
-| **Presets** | Sauvegardez et réutilisez vos configurations |
+|                         |                                                       |
+| ----------------------- | ----------------------------------------------------- |
+| **80% Block 0**         | La majorité de nos transactions land au premier block |
+| **Réglages par Rugger** | Chaque adresse monitorée a ses propres paramètres     |
+| **Multi TP/SL**         | Vendez par paliers avec jusqu'à 5 niveaux             |
+| **Rugger Protection**   | Suivez automatiquement les changements de wallets     |
+| **Presets**             | Sauvegardez et réutilisez vos configurations          |
 
 ### Par où commencer ?
 
-Si c'est votre première fois, commencez par la page [Première utilisation](get-started/premiere-utilisation.md).
+Si c'est votre première fois, commencez par la page [Première utilisation](demarrage/premiere-utilisation.md).
 
 Si vous connaissez déjà le bot, explorez directement les sections qui vous intéressent dans le menu à gauche.
