@@ -10,9 +10,9 @@ La Buy Config contrôle **comment le bot achète** pour un rugger spécifique. D
 
 Le montant en SOL que le bot dépensera pour chaque achat déclenché par ce rugger.
 
-**Exemple** : Si vous mettez 0.1 SOL, chaque achat automatique coûtera 0.1 SOL (hors gas fees).
+**Exemple** : Si vous mettez 0.2 SOL, chaque achat automatique coûtera 0.2 SOL (hors gas fees).
 
-> ⚠️ **Minimum recommandé : 0.1 SOL.** Les frais de gas par défaut sont de \~0.012 SOL par transaction (achat + vente = \~0.024 SOL au total). Si vous snipez avec 0.05 SOL, vous dépenserez presque la moitié en frais, ce qui réduit fortement votre rentabilité. Voir la section Gas Fees ci-dessous.
+> ⚠️ **Minimum recommandé : 0.2 SOL.** Les frais de gas par défaut sont de \~0.022 SOL par transaction (achat + vente = \~0.044 SOL au total). Si vous snipez avec 0.05 SOL, vous dépenserez presque tout en frais, ce qui réduit fortement votre rentabilité. Voir la section Gas Fees ci-dessous.
 
 ***
 
