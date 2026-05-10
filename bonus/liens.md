@@ -2,9 +2,9 @@
 
 ### F Project
 
-|                         |                       |
-| ----------------------- | --------------------- |
-| **Rejoindre F Project** | https://fproject.xyz  |
+|                         |                                               |
+| ----------------------- | --------------------------------------------- |
+| **Rejoindre F Project** | [https://fproject.xyz](https://fproject.xyz/) |
 
 ### Réseaux sociaux
 
