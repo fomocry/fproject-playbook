@@ -13,7 +13,10 @@
 * [⚙️ Config par Rugger](ruggers/config-rugger.md)
 * [🔔 Modes de Tracking](ruggers/tracking-modes.md)
 * [💰 Buy Config](ruggers/buy-config.md)
+* [📉 Buy the Dip](ruggers/buy-the-dip.md)
+* [🛑 Max Loss Counter](ruggers/max-loss-counter.md)
 * [📈 Sell Config (TP/SL & Trailing)](ruggers/sell-config.md)
+* [🐳 Auto-Sell on Big Buy](ruggers/auto-sell-big-buy.md)
 
 ## Rugger Protection
 
@@ -21,11 +24,14 @@
 * [🔀 Modes de Protection](rugger-protection/modes.md)
 * [🆕 Fresh Wallet](rugger-protection/fresh-wallet.md)
 * [📏 Transfer Ranges](rugger-protection/transfer-ranges.md)
+* [⚡ Front Run Sell](rugger-protection/front-run-sell.md)
 
 ## Outils
 
-* [📋 Presets](outils/presets.md)
+* [📋 Presets & Réglages par Défaut](outils/presets-defaults.md)
 * [📊 Positions](outils/positions.md)
+* [💸 Sell Initials](outils/sell-initials.md)
+* [⚡ Quick Buy by CA](outils/quick-buy-ca.md)
 * [🔔 Notifications](outils/notifications.md)
 * [🎁 Referral](outils/referral.md)
 
