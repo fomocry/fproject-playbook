@@ -13,6 +13,7 @@
 * [⚙️ Config par Rugger](ruggers/config-rugger.md)
 * [🔔 Modes de Tracking](ruggers/tracking-modes.md)
 * [💰 Buy Config](ruggers/buy-config.md)
+* [🔥 Buy Modes — Simple vs Hardcore](ruggers/buy-modes.md)
 * [📉 Buy the Dip](ruggers/buy-the-dip.md)
 * [🛑 Max Loss Counter](ruggers/max-loss-counter.md)
 * [📈 Sell Config (TP/SL & Trailing)](ruggers/sell-config.md)
@@ -28,7 +29,7 @@
 
 ## Outils
 
-* [📋 Presets & Réglages par Défaut](outils/presets-and-reglages-par-defaut.md)
+* [📋 Presets & Réglages par Défaut](outils/presets-defaults.md)
 * [📊 Positions](outils/positions.md)
 * [💸 Sell Initials](outils/sell-initials.md)
 * [⚡ Quick Buy by CA](outils/quick-buy-ca.md)
