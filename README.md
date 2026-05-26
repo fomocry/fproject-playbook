@@ -14,13 +14,14 @@ F Project vous permet de :
 | | |
 |---|---|
 | **80% Block 0** | La majorité de nos transactions land au premier block |
-| **4 Serveurs, 2 Continents** | US-NW, US-LAX, EU-FRA, EU-AMS — au plus proche des validateurs |
+| **5 Serveurs, 3 Continents** | US-NW, US-LAX, EU-FRA, EU-AMS, ASIA-TYO — au plus proche des validateurs |
 | **30 Ruggers par Wallet** | Monitorez jusqu'à 30 adresses simultanément |
 | **Réglages par Rugger** | Chaque adresse monitorée a ses propres paramètres |
 | **Multi TP/SL** | Vendez par paliers avec jusqu'à 5 niveaux |
 | **Buy The Dip** | Achetez automatiquement les baisses en 3 niveaux |
 | **Rugger Protection** | Suivez automatiquement les changements de wallets |
 | **Protection Auto-Achat** | Le bot coupe l'auto-achat après X pertes consécutives |
+| **Buy Modes Simple/Hardcore** | Choisis l'agressivité d'exécution par rugger (multi-nonce sur les 2 modes) |
 
 ### Par où commencer ?
 
