@@ -28,7 +28,7 @@ Au lieu d'1 chance d'être le plus rapide, tu en as **5**. À chaque snipe.
 |---|---|---|
 | **Multi-nonce 5 serveurs** | ✅ | ✅ |
 | **Priority fee + tip** | Tes valeurs configurées (fixes) | Outbid auto des autres snipers |
-| **Priority max par buy** | Tes settings | **0.05 SOL** (cap) |
+| **Priority max par buy** | Tes settings | **0.025 SOL** (cap) |
 | **Tip max par buy** | Tes settings | **0.002 SOL** (cap) |
 | **Compute Unit sur PumpFun** | 120 000 (généreux) | **95 000** (serré) |
 | **Compute Unit sur PumpSwap** | 150 000 | 150 000 |
@@ -53,9 +53,9 @@ Hardcore, c'est l'agressivité maximale.
 1. **Outbid dynamique** — le système monitore en temps réel les fees des autres snipers sur le token et **te place toujours au-dessus**. Bump minimum : +15% ou +0.0005 SOL (selon ce qui est plus élevé), par-dessus tes floors configurés.
 
 2. **Caps de sécurité** — même en outbid, tu es protégé :
-   - Priority fee max par buy : **0.05 SOL**
+   - Priority fee max par buy : **0.025 SOL**
    - Tip max par buy : **0.002 SOL**
-   - Worst case par buy : ~**0.052 SOL** de frais (en plus du montant que tu veux acheter)
+   - Worst case par buy : ~**0.027 SOL** de frais (en plus du montant que tu veux acheter)
 
 3. **Compute Unit réduit** — 95 000 CU sur PumpFun (au lieu de 120k). Une transaction plus légère = plus rapide à scheduler par le leader = tu gagnes la race plus souvent.
 
@@ -112,7 +112,7 @@ Clique sur la ligne `Buy Mode` pour switcher. Si tu passes en Hardcore, l'écran
 - ✅ Simple ET Hardcore utilisent les **5 serveurs multi-nonce** — pas de différence d'infra
 - ✅ Une tx Hardcore qui fail = **tu n'es PAS débité** de ton montant de buy ni des fees
 - ⚠️ Hardcore = plus de fails sur PumpFun à cause du CU 95k (vs 120k en Simple)
-- ⚠️ Hardcore peut consommer jusqu'à **0.052 SOL de frais par buy** (cap absolu)
+- ⚠️ Hardcore peut consommer jusqu'à **0.027 SOL de frais par buy** (cap absolu, hors Bribe)
 - 🔧 Si tu vois trop de fails sur un rugger en Hardcore, repasse en Simple — c'est probablement un rugger dont les tokens ont des paths trop lourds pour 95k CU
 
 Pages liées :
