@@ -4,7 +4,7 @@ Tu as désormais deux modes d'exécution pour tes buys, configurables par rugger
 
 ## L'infrastructure derrière : le Multi-Nonce
 
-Avant de parler des modes, comprendre l'infra. Sur Solana, le rôle de leader (le validateur qui produit le prochain bloc) tourne géographiquement toutes les **~400ms** entre les validateurs du monde entier. Si ta transaction est envoyée depuis un serveur loin du leader actuel, tu perds la race face à quelqu'un de mieux placé.
+Avant de parler des modes, comprendre l'infra. Sur Solana, le rôle de leader (le validateur qui produit le prochain bloc) tourne géographiquement toutes les **\~400ms** entre les validateurs du monde entier. Si ta transaction est envoyée depuis un serveur loin du leader actuel, tu perds la race face à quelqu'un de mieux placé.
 
 F Project résout ce problème avec une infrastructure **multi-nonce sur 5 serveurs bare-metal** répartis dans toutes les zones de validateurs :
 
@@ -24,15 +24,15 @@ Au lieu d'1 chance d'être le plus rapide, tu en as **5**. À chaque snipe.
 
 ## Simple vs Hardcore — le récap
 
-| | **🎯 Simple** | **🔥 Hardcore** |
-|---|---|---|
-| **Multi-nonce 5 serveurs** | ✅ | ✅ |
-| **Priority fee + tip** | Tes valeurs configurées (fixes) | Outbid auto des autres snipers |
-| **Priority max par buy** | Tes settings | **0.025 SOL** (cap) |
-| **Tip max par buy** | Tes settings | **0.002 SOL** (cap) |
-| **Compute Unit sur PumpFun** | 120 000 (généreux) | **95 000** (serré) |
-| **Compute Unit sur PumpSwap** | 150 000 | 150 000 |
-| **Taux de transactions qui fail** | Faible | Plus élevé (CU exceeded) |
+|                                   | **🎯 Simple**                   | **🔥 Hardcore**                |
+| --------------------------------- | ------------------------------- | ------------------------------ |
+| **Multi-nonce 5 serveurs**        | ✅                               | ✅                              |
+| **Priority fee + tip**            | Tes valeurs configurées (fixes) | Outbid auto des autres snipers |
+| **Priority max par buy**          | Tes settings                    | **0.025 SOL** (cap)            |
+| **Tip max par buy**               | Tes settings                    | **0.002 SOL** (cap)            |
+| **Compute Unit sur PumpFun**      | 120 000 (généreux)              | **95 000** (serré)             |
+| **Compute Unit sur PumpSwap**     | 150 000                         | 150 000                        |
+| **Taux de transactions qui fail** | Faible                          | Plus élevé (CU exceeded)       |
 
 **One-liner** : Simple = vitesse multi-région à **tes** frais. Hardcore = vitesse multi-région à **agressivité maximale** (outbid auto + CU réduit sur PumpFun pour passer plus vite).
 
@@ -51,12 +51,10 @@ Hardcore, c'est l'agressivité maximale.
 **Ce qui change** :
 
 1. **Outbid dynamique** — le système monitore en temps réel les fees des autres snipers sur le token et **te place toujours au-dessus**. Bump minimum : +15% ou +0.0005 SOL (selon ce qui est plus élevé), par-dessus tes floors configurés.
-
 2. **Caps de sécurité** — même en outbid, tu es protégé :
-   - Priority fee max par buy : **0.025 SOL**
-   - Tip max par buy : **0.002 SOL**
-   - Worst case par buy : ~**0.027 SOL** de frais (en plus du montant que tu veux acheter)
-
+   * Priority fee max par buy : **0.025 SOL**
+   * Tip max par buy : **0.002 SOL**
+   * Worst case par buy : \~**0.027 SOL** de frais (en plus du montant que tu veux acheter)
 3. **Compute Unit réduit** — 95 000 CU sur PumpFun (au lieu de 120k). Une transaction plus légère = plus rapide à scheduler par le leader = tu gagnes la race plus souvent.
 
 ### Le trade-off : plus de transactions qui fail
@@ -69,7 +67,7 @@ C'est le prix à payer pour avoir la transaction la plus légère possible et ga
 
 C'est le point le plus important à comprendre :
 
-> **Une transaction qui fail = aucun SOL prélevé** (sauf ~0.000005 SOL de base fee Solana, négligeable).
+> **Une transaction qui fail = aucun SOL prélevé** (sauf \~0.000005 SOL de base fee Solana, négligeable).
 
 Tu n'achètes pas le token, mais tu n'es pas non plus débité de ton montant de buy ni de tes priority fees. Tu peux retenter immédiatement ou switch sur Simple pour ce rugger.
 
@@ -79,43 +77,47 @@ Quand tu actives Hardcore pour la première fois sur un rugger, F Project t'affi
 
 Tu confirmes avec **`Yes, I still want Hardcore mode`** ou tu retournes en Simple avec **`I go back to Simple mode`**.
 
-> *📸 Screenshot à ajouter : `images/hardcore-confirmation.png` — l'écran de prévention*
+> <img src="../.gitbook/assets/2.png" alt="" data-size="original">
 
 ## Où configurer
 
 Le buy mode se règle **par rugger**, dans la section principale de config du rugger :
 
-> *📸 Screenshot à ajouter : `images/rugger-config-simple.png` et `images/rugger-config-hardcore.png`*
+> <img src="../.gitbook/assets/1.png" alt="" data-size="original">
 
 Tu vois clairement dans le menu :
-- `🎯 Buy Mode: Simple` (par défaut)
-- `🔥 Buy Mode: Hardcore` (après activation)
+
+* `🎯 Buy Mode: Simple` (par défaut)
+* `🔥 Buy Mode: Hardcore` (après activation)
 
 Clique sur la ligne `Buy Mode` pour switcher. Si tu passes en Hardcore, l'écran de confirmation s'affiche avant validation.
 
 ## Quand utiliser quoi
 
 **Reste sur Simple si** :
-- Tu débutes sur F Project — c'est le mode safe, comprends la base avant d'aller plus loin
-- Tu trades des ruggers "tranquilles" où le bloc 0 n'est pas critique
-- Tu veux la prédictibilité maximale (tes fees, tes paramètres, pas de surprise)
+
+* Tu débutes sur F Project — c'est le mode safe, comprends la base avant d'aller plus loin
+* Tu trades des ruggers "tranquilles" où le bloc 0 n'est pas critique
+* Tu veux la prédictibilité maximale (tes fees, tes paramètres, pas de surprise)
 
 **Passe en Hardcore si** :
-- Tu es sur un rugger **race-to-block-zero** où les premières secondes font toute la différence
-- Tu acceptes de perdre ~20-30% des trades pour gagner les plus juteux
-- Tu trades des ruggers compétitifs où d'autres snipers utilisent aussi des engines agressifs
+
+* Tu es sur un rugger **race-to-block-zero** où les premières secondes font toute la différence
+* Tu acceptes de perdre \~20-30% des trades pour gagner les plus juteux
+* Tu trades des ruggers compétitifs où d'autres snipers utilisent aussi des engines agressifs
 
 **Setup hybride courant** : Simple sur la plupart de tes ruggers, Hardcore sur les 2-3 ruggers les plus rentables où la race est serrée.
 
 ## ⚠️ À retenir
 
-- ✅ Simple ET Hardcore utilisent les **5 serveurs multi-nonce** — pas de différence d'infra
-- ✅ Une tx Hardcore qui fail = **tu n'es PAS débité** de ton montant de buy ni des fees
-- ⚠️ Hardcore = plus de fails sur PumpFun à cause du CU 95k (vs 120k en Simple)
-- ⚠️ Hardcore peut consommer jusqu'à **0.027 SOL de frais par buy** (cap absolu, hors Bribe)
-- 🔧 Si tu vois trop de fails sur un rugger en Hardcore, repasse en Simple — c'est probablement un rugger dont les tokens ont des paths trop lourds pour 95k CU
+* ✅ Simple ET Hardcore utilisent les **5 serveurs multi-nonce** — pas de différence d'infra
+* ✅ Une tx Hardcore qui fail = **tu n'es PAS débité** de ton montant de buy ni des fees
+* ⚠️ Hardcore = plus de fails sur PumpFun à cause du CU 95k (vs 120k en Simple)
+* ⚠️ Hardcore peut consommer jusqu'à **0.027 SOL de frais par buy** (cap absolu, hors Bribe)
+* 🔧 Si tu vois trop de fails sur un rugger en Hardcore, repasse en Simple — c'est probablement un rugger dont les tokens ont des paths trop lourds pour 95k CU
 
 Pages liées :
-- [💰 Buy Config](buy-config.md) — montant, slippage, et les autres params de base
-- [⚙️ Config par Rugger](config-rugger.md) — vue d'ensemble des settings
-- [📉 Buy the Dip](buy-the-dip.md) — DCA automatique en cas de dump
+
+* [💰 Buy Config](buy-config.md) — montant, slippage, et les autres params de base
+* [⚙️ Config par Rugger](config-rugger.md) — vue d'ensemble des settings
+* [📉 Buy the Dip](buy-the-dip.md) — DCA automatique en cas de dump

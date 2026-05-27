@@ -29,7 +29,7 @@
 
 ## Outils
 
-* [📋 Presets & Réglages par Défaut](outils/presets-defaults.md)
+* [📋 Presets & Réglages par Défaut](outils/presets-and-reglages-par-defaut.md)
 * [📊 Positions](outils/positions.md)
 * [💸 Sell Initials](outils/sell-initials.md)
 * [⚡ Quick Buy by CA](outils/quick-buy-ca.md)
