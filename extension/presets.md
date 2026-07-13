@@ -33,5 +33,5 @@ Les presets sont synchronisés avec ton compte F Project : tu les retrouves à l
 Pages liées :
 
 * [⚡ Fonctionnalités](fonctionnalites.md)
-* [📋 Presets & Réglages par Défaut](../outils/presets-and-reglages-par-defaut.md)
+* [📋 Presets](../outils/presets-and-reglages-par-defaut.md)
 * [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)
