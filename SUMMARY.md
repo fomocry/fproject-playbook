@@ -36,6 +36,12 @@
 * [🔔 Notifications](outils/notifications.md)
 * [🎁 Referral](outils/referral.md)
 
+## Extension Chrome
+
+* [🧩 Vue d'ensemble & Installation](extension/overview.md)
+* [⚡ Fonctionnalités](extension/fonctionnalites.md)
+* [🎛 Presets P1 / P2 / P3](extension/presets.md)
+
 ## Bonus
 
 * [⁉️ Messages d'erreur](bonus/erreurs.md)
