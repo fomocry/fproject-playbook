@@ -25,16 +25,7 @@ Une fois connecté, l'extension charge automatiquement tes wallets, tes presets 
 
 ## Vue rapide de l'interface
 
-```
-┌─ Extension F Project ─────────────┐
-│  [Positions]  [Trackers]          │
-│                                   │
-│  Quick Buy :  [P1] [P2] [P3]      │
-│  Wallet actif : Wallet 1          │
-│                                   │
-│  Token détecté : ...pump          │
-└───────────────────────────────────┘
-```
+<div align="left"><figure><img src="../.gitbook/assets/1 (1).png" alt="" width="343"><figcaption></figcaption></figure></div>
 
 * **Positions** — tes tokens en cours, avec P\&L et vente rapide
 * **Trackers** — tes ruggers suivis, accessibles sans ouvrir Telegram
