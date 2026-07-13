@@ -7,6 +7,7 @@ L'extension Chrome F Project amène l'exécution directement dans ton navigateur
 L'extension est un **client léger de l'infrastructure F Project**. Elle ne fait aucun appel à des API externes : tout passe en direct par le backend F Project, avec la même exécution que le bot Telegram et le Terminal.
 
 Concrètement :
+
 * Même wallets, mêmes positions, mêmes trackers que sur le bot — tout est synchronisé
 * Même vitesse d'exécution (l'extension envoie l'ordre, l'infra fait le reste)
 * Aucune donnée de marché ne provient d'un service tiers
@@ -15,7 +16,7 @@ Concrètement :
 
 ## Installation
 
-1. Ouvre la page de l'extension : **https://extension.fproject.gg/**
+1. Ouvre la page de l'extension : [**https://extension.fproject.gg/**](https://extension.fproject.gg/)
 2. Clique sur **Ajouter à Chrome** → **Ajouter l'extension**
 3. Épingle l'extension (icône puzzle 🧩 → pin) pour l'avoir toujours visible
 4. Clique sur l'icône F Project et connecte-toi avec ton compte
@@ -35,12 +36,13 @@ Une fois connecté, l'extension charge automatiquement tes wallets, tes presets 
 └───────────────────────────────────┘
 ```
 
-* **Positions** — tes tokens en cours, avec P&L et vente rapide
+* **Positions** — tes tokens en cours, avec P\&L et vente rapide
 * **Trackers** — tes ruggers suivis, accessibles sans ouvrir Telegram
 * **P1 / P2 / P3** — tes trois presets de Quick Buy (montant + réglages)
 * **Token détecté** — le CA de la page en cours, rempli automatiquement
 
 Pages liées :
-- [⚡ Fonctionnalités](fonctionnalites.md)
-- [🎛 Presets P1 / P2 / P3](presets.md)
-- [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)
+
+* [⚡ Fonctionnalités](fonctionnalites.md)
+* [🎛 Presets P1 / P2 / P3](presets.md)
+* [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)
