@@ -30,30 +30,3 @@ Un Preset stocke **tous** les paramètres du rugger :
 * Gas Settings
 
 Les Presets sont **indépendants du wallet** — vous pouvez appliquer un Preset créé sur le Wallet A à un rugger du Wallet B.
-
-### Exemples de Presets recommandés
-
-> 💡 Créez 2-3 Presets pour couvrir vos cas d'usage principaux :
-
-**"Sniper Agressif"**
-* 🆕 New Token Creations
-* Buy Amount : 0.1 SOL
-* Trailing SL : -20%
-* No Activity : 20s
-* Protection ON, Last Transfer
-* Protection Auto-Achat : 5 pertes
-
-**"Copy Trade Safe"**
-* 📦 Track Buys + 📤 Track Sells
-* Buy Amount : 0.1 SOL
-* TP : +10% → 50%, +30% → 100%
-* SL : -50%
-* Copier le % de Vente : ON
-* Protection OFF
-
-**"DCA Dip Buyer"**
-* 🆕 New Token Creations
-* Buy Amount : 0.05 SOL
-* Buy The Dip : -20% → 0.1 SOL, -40% → 0.2 SOL
-* Trailing SL : -25%
-* Protection ON
