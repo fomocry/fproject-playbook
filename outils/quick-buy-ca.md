@@ -20,7 +20,7 @@ Tu cliques sur le montant → buy exécuté instantanément avec ta config de sl
 
 ## Configuration
 
-Les montants des boutons et les paramètres de buy se règlent dans **Outils → Presets & Réglages par Défaut → Quick Buy** :
+Les montants des boutons et les paramètres de buy se règlent dans **Outils → Presets → Quick Buy** :
 
 ```
 Quick Buy Buttons:    0.1 / 0.5 / 1 / 2 SOL
@@ -50,6 +50,6 @@ Le step de confirmation te protège contre les paste accidentels — tu peux cop
 Combine avec le wallet par défaut configuré sur un wallet "scout" (petite balance dédiée aux entrées rapides). Ça te garantit que tes Quick Buy ne touchent pas tes wallets principaux et que l'exposure reste contrôlée.
 
 Pages liées :
-- [📋 Presets & Réglages par Défaut](presets-defaults.md)
+- [📋 Presets](presets-and-reglages-par-defaut.md)
 - [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)
 - [📊 Positions](positions.md)
