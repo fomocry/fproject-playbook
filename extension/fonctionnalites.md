@@ -6,14 +6,7 @@ Tour complet de ce que l'extension fait, feature par feature.
 
 La feature signature. Quand un contract address Solana apparaît dans ta timeline X ou dans un salon Discord, l'extension **injecte les boutons de buy directement dans le feed**, à côté du CA.
 
-```
-┌─ Tweet ───────────────────────────────┐
-│ @caller : nouveau play 👀             │
-│ 9ki4MjbQ...icpump                     │
-│                                       │
-│ ⚡ F Project : [P1] [P2] [P3]         │
-└───────────────────────────────────────┘
-```
+<div align="left"><figure><img src="../.gitbook/assets/f project extension 3 (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 Tu vois le CA → tu cliques sur un preset → le buy part sur ton wallet actif. Tu n'as jamais quitté ton feed.
 
@@ -33,18 +26,15 @@ Les onglets Positions et Trackers se filtrent aussi selon les wallets sélection
 
 ## 💸 Panneau de vente par wallet
 
-Après un buy, un **panel de sell apparaît pour chaque wallet sélectionné**. Si tu détiens le même token sur plusieurs wallets, tu gères chaque sortie indépendamment :
-
-```
-Wallet 1 :  0.8 SOL  +42%   [25%] [50%] [100%]
-Wallet 2 :  0.3 SOL  +42%   [25%] [50%] [100%]
-```
-
+Après un buy, un **panel de sell apparaît pour chaque wallet sélectionné**. Si tu détiens le même token sur plusieurs wallets, tu gères chaque sortie indépendamment .\
+\
 Pratique pour sortir tes initials sur un wallet tout en laissant courir l'autre.
+
+<div align="left"><figure><img src="../.gitbook/assets/f project extension 4 (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ## 📋 Onglet Positions
 
-Toutes tes positions ouvertes, les mêmes que sur le bot, visibles depuis n'importe quelle page web : token, entrée, P&L, boutons de vente rapide. Tu n'as plus besoin d'ouvrir Telegram pour surveiller ou couper une position.
+Toutes tes positions ouvertes, les mêmes que sur le bot, visibles depuis n'importe quelle page web : token, entrée, P\&L, boutons de vente rapide. Tu n'as plus besoin d'ouvrir Telegram pour surveiller ou couper une position.
 
 ## 👁 Onglet Trackers
 
@@ -53,7 +43,8 @@ Tes ruggers suivis, avec leur config active. Tu peux vérifier d'un coup d'œil 
 > 💡 Workflow type : le bot tourne en autonome sur tes ruggers trackés, et l'extension te sert pour les entrées manuelles opportunistes — un call qui passe dans un feed, un token repéré sur une page. Les deux se complètent.
 
 Pages liées :
-- [🧩 Vue d'ensemble & Installation](overview.md)
-- [🎛 Presets P1 / P2 / P3](presets.md)
-- [📊 Positions](../outils/positions.md)
-- [⚡ Quick Buy by CA](../outils/quick-buy-ca.md)
+
+* [🧩 Vue d'ensemble & Installation](overview.md)
+* [🎛 Presets P1 / P2 / P3](presets.md)
+* [📊 Positions](../outils/positions.md)
+* [⚡ Quick Buy by CA](../outils/quick-buy-ca.md)

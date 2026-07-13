@@ -1,4 +1,4 @@
-# 🎛 Presets P1 / P2 / P3
+# 🎛️ Presets P1 / P2 / P3
 
 Les presets sont le cœur de la vitesse de l'extension : trois configurations de buy pré-enregistrées, exécutables en un clic depuis n'importe où — feed X, Discord ou page token.
 
@@ -9,7 +9,7 @@ Chaque preset (P1, P2, P3) enregistre un **montant de buy** et ses réglages d'e
 L'idée : couvrir tes trois tailles de position habituelles.
 
 ```
-P1 :  0.1 SOL   → entrée scout / test
+P1 :  0.1 SOL   → entrée test
 P2 :  0.5 SOL   → position standard
 P3 :  1 SOL     → conviction
 ```
@@ -31,6 +31,7 @@ Les presets sont synchronisés avec ton compte F Project : tu les retrouves à l
 > ⚠️ Pas de menu de confirmation sur les presets injectés dans les feeds : c'est ce qui les rend rapides, c'est aussi ce qui les rend dangereux si tes montants sont mal réglés. Configure d'abord, scrolle ensuite.
 
 Pages liées :
-- [⚡ Fonctionnalités](fonctionnalites.md)
-- [📋 Presets & Réglages par Défaut](../outils/presets-and-reglages-par-defaut.md)
-- [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)
+
+* [⚡ Fonctionnalités](fonctionnalites.md)
+* [📋 Presets & Réglages par Défaut](../outils/presets-and-reglages-par-defaut.md)
+* [👜 Créer & Gérer ses Wallets](../get-started/wallets.md)

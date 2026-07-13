@@ -25,7 +25,7 @@ Une fois connecté, l'extension charge automatiquement tes wallets, tes presets 
 
 ## Vue rapide de l'interface
 
-<div align="left"><figure><img src="../.gitbook/assets/1 (1).png" alt="" width="343"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/f project extension 1 (2).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * **Positions** — tes tokens en cours, avec P\&L et vente rapide
 * **Trackers** — tes ruggers suivis, accessibles sans ouvrir Telegram
