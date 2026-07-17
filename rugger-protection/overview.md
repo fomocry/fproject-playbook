@@ -24,6 +24,19 @@ Sans Rugger Protection, vous perdriez la trace du dev. Avec, le bot détecte le 
 | **📌 Keep Address** | Garder l'ancienne adresse en plus de la nouvelle |
 | **🆕 Fresh Wallet** | N'ajouter que les wallets neufs ([détails](fresh-wallet.md)) |
 | **📏 Transfer Ranges** | Filtrer par montants de transfert précis ([détails](transfer-ranges.md)) |
+| **🧹 Remove if no launch** | Supprimer automatiquement les adresses inactives après X heures |
+
+### 🧹 Remove if no launch
+
+Cette fonctionnalité **supprime automatiquement du monitoring** les adresses qui n'ont **ni créé ni acheté de token** pendant la durée que vous définissez.
+
+**Le problème que ça résout :** avec la Rugger Protection qui ajoute des adresses au fil des transferts, votre liste peut vite se remplir d'adresses "mortes" — des wallets qui ne lancent jamais rien. Elles occupent vos slots pour rien.
+
+**Comment ça marche :** vous définissez une période de probation en **heures (1 à 168**, soit 7 jours ; **0 = désactivé)**. Si l'adresse n'a produit aucune création de token ni aucun achat pendant cette période, le bot la retire automatiquement du monitoring.
+
+**Exemple :** Remove if no launch réglé sur **2h**. La Protection détecte un transfert et ajoute le Wallet B. Si le Wallet B ne crée ni n'achète rien pendant 2 heures, il est supprimé automatiquement — votre liste reste propre.
+
+> 💡 **Par adresse enfant** : si l'**Héritage des Paramètres est OFF**, chaque adresse enfant reçoit le Remove if no launch défini dans vos **Child Address Defaults** — vous pouvez donc avoir des durées différentes d'une adresse à l'autre (voir [Config par Rugger](../ruggers/config-rugger.md)).
 
 ### Héritage des Paramètres
 
