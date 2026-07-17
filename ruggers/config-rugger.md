@@ -68,4 +68,19 @@ Ce toggle contrôle ce qui se passe quand la **Rugger Protection** détecte un t
 
 En désactivant l'héritage, les adresses enfants reçoivent des paramètres "propres" — vous gardez le contrôle.
 
+**⚙️ Child Address Defaults — vos paramètres pour les enfants**
+
+Quand l'héritage est OFF, les adresses enfants reçoivent les valeurs définies dans **Child Address Defaults** (accessible depuis le menu Protection). Vous y contrôlez :
+
+* **Keep Address** et **Fresh Wallet** — les règles de Protection des enfants
+* **Protection ON/OFF** et son **Mode**
+* **Auto-Buy** et **Auto-Sell**
+* **🧹 Remove if no launch** — la durée de probation propre aux adresses enfants
+* **Transfer Ranges**
+
+Comme le Remove if no launch se règle aussi ici, une adresse parent et ses enfants peuvent avoir des durées de probation **différentes** — par exemple 24h sur le parent que vous connaissez, 2h sur les enfants à l'essai.
+
+> 💡 **Tip anti-cascade** : mettez Keep Address OFF et Protection OFF dans les Child Address Defaults — les adresses enfants sont snipées une fois, puis retirées. Combiné avec un Remove if no launch court, votre liste reste toujours propre.
+
+
 > ⚠️ **Important** : Si vous utilisez Keep Address ON, pensez à désactiver l'héritage pour éviter de remplir tous vos slots automatiquement.

@@ -26,6 +26,24 @@ Le délai en secondes entre le moment où le bot détecte un événement et le m
 
 ---
 
+### 🌕 Max Token Age (copytrade uniquement)
+
+L'âge maximum, en **minutes**, qu'un token peut avoir pour que le bot copie un achat.
+
+**Le problème que ça résout :** en copytrading, le wallet que vous suivez peut acheter un token qui existe depuis longtemps — 50 minutes, 3 heures, une journée. Ces entrées tardives ne correspondent souvent pas à votre stratégie : le token a déjà fait son mouvement.
+
+**Comment ça marche :** si vous réglez Max Token Age à **10 min** et que votre rugger achète un token créé il y a 50 minutes, le bot **ignore cet achat**. Il ne copie que les achats sur des tokens plus récents que votre limite.
+
+**Configuration :**
+* Valeur en minutes, de 1 à **1440** (24 heures)
+* **0 = OFF** (aucun filtre d'âge)
+
+> ⚠️ Ce filtre ne fonctionne qu'en **copytrading** (Track Buys). Il n'a aucun effet en sniping — un token snipé en Block 0 a par définition 0 minute d'âge.
+
+> 💡 **Conseil** : Un Max Token Age court (5-15 min) vous aligne sur les entrées précoces de votre rugger et filtre ses trades "hors stratégie". Si vous copiez un trader qui fait aussi du swing sur des tokens établis, montez la limite ou laissez OFF.
+
+---
+
 ### 🔂 Buy Only Once
 
 Quand activé, le bot ne copiera que le **premier achat** du wallet et ignorera les suivants sur le même token.
