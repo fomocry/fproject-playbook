@@ -57,6 +57,12 @@ Sell Action:               100% of position
 
 50% est le bon défaut — agressif sans être trop trigger-happy.
 
+## 🆕 Nouveau Front Run Sell — chemin shreds accéléré
+
+Une version améliorée du Front Run Sell utilise un chemin **shreds encore plus rapide** pour *tenter* de passer **devant le transfer du dev** et vendre avant lui. Rappel : les shreds sont les fragments de bloc les plus précoces que les validateurs s'échangent — voir plus tôt, c'est agir plus tôt.
+
+Le mot important est **tenter** : c'est une course, et gagner la course dépend des conditions du réseau à cet instant. Ce chemin met toutes les chances de ton côté pour sortir avant le dump, mais aucune sortie anticipée n'est jamais garantie.
+
 ## Use case
 
 C'est ton edge ultime sur les ruggers qui font le shuffle classique :

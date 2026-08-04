@@ -24,7 +24,7 @@ Sans Rugger Protection, vous perdriez la trace du dev. Avec, le bot détecte le 
 | **📌 Keep Address** | Garder l'ancienne adresse en plus de la nouvelle |
 | **🆕 Fresh Wallet** | N'ajouter que les wallets neufs ([détails](fresh-wallet.md)) |
 | **📏 Transfer Ranges** | Filtrer par montants de transfert précis ([détails](transfer-ranges.md)) |
-| **🧹 Remove if no launch** | Supprimer automatiquement les adresses inactives après X heures |
+| **🧹 Remove if no launch** | Supprimer automatiquement les adresses inactives après un délai (minutes, min 15, ou heures, max 168h) |
 
 ### 🧹 Remove if no launch
 
@@ -32,7 +32,7 @@ Cette fonctionnalité **supprime automatiquement du monitoring** les adresses qu
 
 **Le problème que ça résout :** avec la Rugger Protection qui ajoute des adresses au fil des transferts, votre liste peut vite se remplir d'adresses "mortes" — des wallets qui ne lancent jamais rien. Elles occupent vos slots pour rien.
 
-**Comment ça marche :** vous définissez une période de probation en **heures (1 à 168**, soit 7 jours ; **0 = désactivé)**. Si l'adresse n'a produit aucune création de token ni aucun achat pendant cette période, le bot la retire automatiquement du monitoring.
+**Comment ça marche :** vous définissez une période de probation. Un **nombre seul** est lu en **minutes** (minimum **15**), et vous pouvez aussi écrire une unité comme `2h` ou `48 hours`. Le maximum est **168h** (7 jours), et **0 = désactivé**. Si l'adresse n'a produit aucune création de token ni aucun achat pendant cette période, le bot la retire automatiquement du monitoring.
 
 **Exemple :** Remove if no launch réglé sur **2h**. La Protection détecte un transfert et ajoute le Wallet B. Si le Wallet B ne crée ni n'achète rien pendant 2 heures, il est supprimé automatiquement — votre liste reste propre.
 
