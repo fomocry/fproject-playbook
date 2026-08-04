@@ -52,6 +52,22 @@ Ce paramètre n'apparaît que si **Track Buys** est activé dans le Tracking Mod
 
 ---
 
+### ⏳ Follow Cooldown (copytrade uniquement)
+
+Après que le bot a copié un achat sur un rugger, il **attend un délai** avant de copier un autre achat **de ce même rugger**. Ça empêche les achats en rafale quand le wallet suivi enchaîne plusieurs entrées coup sur coup.
+
+**Le problème que ça résout :** certains wallets font 4-5 achats en quelques secondes sur des tokens différents. Sans cooldown, le bot copie tout, et vous vous retrouvez avec 5 positions ouvertes d'un coup — impossible à gérer proprement.
+
+**Comment ça marche :** valeur en **secondes**. Si vous réglez Follow Cooldown à **30**, une fois qu'un achat est copié sur ce rugger, le bot ignore ses achats suivants pendant 30 secondes, puis se réarme.
+
+**Configuration :**
+* Valeur en secondes
+* **0 = OFF** (aucun cooldown, tous les achats sont copiés)
+
+> 💡 **Différence avec Buy Only Once** : Buy Only Once filtre les rachats sur **le même token**. Follow Cooldown filtre les achats rapprochés **sur des tokens différents**. Les deux se combinent très bien.
+
+---
+
 ### 📉 Min MC / 📈 Max MC
 
 Le market cap minimum et maximum pour qu'un achat soit exécuté.

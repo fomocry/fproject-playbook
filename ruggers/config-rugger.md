@@ -44,14 +44,15 @@ Ces deux toggles sont **indépendants par rugger**. Vous pouvez avoir un rugger 
 
 Cette fonctionnalité protège votre wallet contre les pertes en série pendant votre absence (la nuit par exemple).
 
-**Comment ça marche :** Le bot compte les pertes consécutives sur ce rugger. Quand le nombre de pertes consécutives atteint le seuil que vous avez défini, le bot **désactive automatiquement l'auto-achat** pour ce rugger uniquement. Vos autres ruggers restent actifs.
+**Comment ça marche :** Le bot compte les ventes perdantes. Quand le compteur atteint le seuil que vous avez défini, le bot **met en pause l'auto-achat**. Le bot affiche **PAUSED**, les nouveaux achats sont bloqués, mais **vos positions ouvertes ne sont pas touchées** — vous réactivez ensuite manuellement.
+
+**Le compteur suit toute la chaîne, pas chaque adresse séparément.** Quand la Rugger Protection ajoute des adresses enfants, les pertes sont comptées **sur le rugger racine (la mère)**, pas enfant par enfant. Si le total atteint le max, l'auto-buy se met en pause pour **toute la chaîne** jusqu'à réactivation. **Une seule victoire sur n'importe quel enfant remet le compteur de la racine à zéro.**
 
 **Configuration :**
-* Seuil par défaut : **10 pertes consécutives**
-* Configurable de **2 à 20** pertes
-* Fonctionne **par rugger** — si un rugger atteint le seuil, seul celui-ci est désactivé
+* Seuil par défaut : **10**
+* Configurable de **1 à 20**
 
-**Exemple :** Vous dormez. Votre rugger "DevSniper" enchaîne 10 trades perdants d'affilée. Le bot désactive automatiquement l'auto-buy sur "DevSniper". Le lendemain matin, vous voyez que l'auto-buy a été coupé, vous vérifiez ce qui s'est passé, et vous décidez de le réactiver ou pas.
+**Exemple :** Vous dormez. Votre rugger "DevSniper" a plusieurs adresses enfants suivies. Additionnées, elles enchaînent 10 ventes perdantes. Le bot met l'auto-buy en pause sur toute la chaîne "DevSniper". Le lendemain matin, vous voyez PAUSED, vous vérifiez ce qui s'est passé, et vous décidez de le réactiver ou pas.
 
 > 💡 **Conseil** : Mettez un seuil bas (3-5) si vous snipez un nouveau rugger que vous ne connaissez pas encore. Montez à 10-15 pour un rugger de confiance qui peut avoir des séries de mauvais tokens de temps en temps.
 

@@ -4,9 +4,11 @@ Coupe automatiquement le copytrade sur un rugger après un nombre défini de **p
 
 ## Comment ça marche
 
-Le système compte les positions perdantes consécutives sur chaque rugger. Quand le compteur atteint le seuil que tu as défini, l'auto-buy se désactive sur ce rugger spécifique. Tes positions ouvertes restent intactes — seuls les nouveaux copytrade sont bloqués.
+Le système compte les ventes perdantes. Quand le compteur atteint le seuil que tu as défini, l'auto-buy se met en pause. Tes positions ouvertes restent intactes — seuls les nouveaux copytrade sont bloqués.
 
-Le compteur **reset à zéro dès qu'une position est gagnante**. Donc une suite de 3 pertes → 1 win → 3 pertes ne déclenche pas le seuil de 5 pertes consécutives. C'est uniquement une vraie série de pertes qui te sort.
+**Le comptage se fait sur la racine, pas sur chaque enfant.** Quand la Rugger Protection ajoute des adresses enfants à partir d'un rugger, les pertes sont additionnées **sur le rugger mère (racine)**, jamais séparément enfant par enfant. Quand ce total atteint le max, l'auto-buy se met en pause pour **toute la chaîne** — la mère et tous ses enfants d'un coup.
+
+Le compteur **reset à zéro dès qu'une vente est gagnante**, sur **n'importe quel enfant** de la chaîne. Une victoire quelque part dans la famille remet toute la racine à zéro. C'est uniquement une vraie série de pertes accumulées qui te sort.
 
 Tu reçois une notification quand le seuil est hit, et le rugger passe en status `PAUSED`. Tu peux le réactiver manuellement quand tu veux.
 
@@ -15,12 +17,12 @@ Tu reçois une notification quand le seuil est hit, et le rugger passe en status
 Par rugger, dans **Config par Rugger → Max Loss Counter** :
 
 ```
-Max Consecutive Losses:   3
-Action:                   Auto-disable copytrade
+Max Losses:   10   (défaut — configurable de 1 à 20)
+Action:       Pause auto-buy sur toute la chaîne
 ```
 
 **Paramètre** :
-- **Max Consecutive Losses** — seuil de pertes d'affilée avant déclenchement (ex: 3, 5, 10)
+- **Max Losses** — seuil de pertes accumulées sur la racine avant déclenchement (défaut 10, de 1 à 20)
 
 Le seuil idéal dépend de l'agressivité du rugger. Pour un rugger qui scalpe avec 30-40% de win rate, configure plus large (5-7). Pour un rugger qui devrait avoir un win rate élevé, configure serré (2-3).
 
