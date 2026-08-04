@@ -42,6 +42,12 @@
 * [⚡ Fonctionnalités](extension/fonctionnalites.md)
 * [🎛️ Presets P1 / P2 / P3](extension/presets.md)
 
+## Claude x F Project
+
+* [🤖 Vue d'ensemble & Connexion](claude/overview.md)
+* [💬 Comment parler à Claude](claude/utilisation.md)
+* [🔐 Trades, confirmations & bonnes pratiques](claude/securite.md)
+
 ## Bonus
 
 * [⁉️ Messages d'erreur](bonus/erreurs.md)
