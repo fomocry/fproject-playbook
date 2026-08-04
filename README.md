@@ -1,6 +1,6 @@
 # 🎯 Bienvenue sur F Project
 
-Bienvenue sur le Playbook officiel de **F Project** — le bot Telegram de sniping et de copy trading le plus rapide sur Solana.
+Bienvenue sur le Playbook officiel de **F Project** — l'infrastructure de sniping et de copy trading la plus rapide sur Solana.
 
 F Project vous permet de :
 
@@ -10,6 +10,7 @@ F Project vous permet de :
 * **Vendre automatiquement** avec des Take Profit, Stop Loss et Trailing Stop Loss multi-niveaux
 * **Acheter la baisse** avec le système Buy The Dip multi-niveaux
 * **Sauvegarder vos configurations** avec le système de Presets
+* **🆕 Piloter votre compte en langage naturel** avec **Claude x F Project** — l'IA branchée directement sur l'infra
 
 | | |
 |---|---|
@@ -22,9 +23,21 @@ F Project vous permet de :
 | **Rugger Protection** | Suivez automatiquement les changements de wallets |
 | **Protection Auto-Achat** | Le bot coupe l'auto-achat après X pertes consécutives |
 | **Buy Modes Simple/Hardcore** | Choisis l'agressivité d'exécution par rugger (multi-nonce sur les 2 modes) |
+| **🤖 Claude x F Project** | Analyse, recherche et exécution en parlant à une IA — même compte, mêmes wallets |
+
+### Quatre surfaces, un seul backend
+
+Tout ce que vous configurez est synchronisé en temps réel entre chaque surface :
+
+* **🤖 Bot Telegram** — le poste de contrôle : wallets, engines, trackers
+* **📊 Terminal** — radar, intel rugger, bubble maps, analytics
+* **🧩 Extension Chrome** — l'exécution directement dans votre navigateur
+* **✨ Claude x F Project** — le copilote IA qui analyse et exécute quand vous lui parlez
 
 ### Par où commencer ?
 
 Si c'est votre première fois, commencez par la page **Première utilisation**.
 
 Si vous connaissez déjà le bot, explorez directement les sections qui vous intéressent dans le menu à gauche.
+
+Et pour découvrir le nouveau copilote IA, filez à la section **Claude x F Project** → **Vue d'ensemble & Connexion** : la connexion prend moins de 2 minutes.
